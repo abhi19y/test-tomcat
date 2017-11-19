@@ -9,7 +9,7 @@ This playbook would simply install Apache2 , Mysql and 2 Apache Tomcat instances
 
 Clone the repository and run follwoing command.
 
-	ansible-playbook simple-project.yml
+	ansible-playbook playbook.yml
 
 ### Prerequisites
 
