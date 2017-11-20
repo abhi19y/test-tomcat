@@ -52,3 +52,14 @@ After restarting we need to edit virtualhost present in /etc/apache2/sites-avail
 Here we are Load Balancing Across Multiple Backend Servers which are tomcat instances.
 
 #### Tomcat configuration is already done and stored in S3 which has public access for now.
+
+#### scripts folder contains two scripts which would automatially run tomcat when server starts , just copy scripts to /etc/init.d/tomcat & /etc/init.d/tomcat-7
+	sudo cp tomcat /etc/init.d/tomcat
+	sudo cp tomcat-7 /etc/init.d/tomcat-7
+
+Change its permissions and  add symlinks 
+	chmod 755 /etc/init.d/tomcat
+	chmod 755 /etc/init.d/tomcat-7
+	update-rc.d tomcat-7 defaults
+	update-rc.d tomcat defaults
+
