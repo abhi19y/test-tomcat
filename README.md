@@ -57,7 +57,7 @@ Here we are Load Balancing Across Multiple Backend Servers which are tomcat inst
 	sudo cp tomcat /etc/init.d/tomcat
 	sudo cp tomcat-7 /etc/init.d/tomcat-7
 
-Change its permissions and  add symlinks 
+#### Change its permissions and  add symlinks 
 	chmod 755 /etc/init.d/tomcat
 	chmod 755 /etc/init.d/tomcat-7
 	update-rc.d tomcat-7 defaults
