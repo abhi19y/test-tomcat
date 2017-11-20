@@ -13,7 +13,8 @@ Clone the repository and run follwoing command.
 
 ### Prerequisites
 
-Ansible shpuld be installed, if its not installed then use following command 
+
+Ansible should be installed, if its not installed then use following command 
 
 	sudo apt-get install ansible
 
@@ -38,8 +39,8 @@ After restarting we need to edit virtualhost present in /etc/apache2/sites-avail
 
 	<VirtualHost *:80>
 	<Proxy balancer://mycluster>
-    	BalancerMember http://127.0.0.1:8080/sample
-    	BalancerMember http://127.0.0.1:8180/sample
+    	BalancerMember http://127.0.0.1:8080/sample # First tomcat running on 8080 port
+    	BalancerMember http://127.0.0.1:8180/sample # Second Tomcat running on 8180 port
 	</Proxy>
 
     	ProxyPreserveHost On
