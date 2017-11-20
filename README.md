@@ -1,7 +1,7 @@
 # test-tomcat
-Using Ansibel Playbook to install Apache,2 Tomcat instances &amp; Mysql server
+Using Ansible Playbook to install Apache,2 Tomcat instances &amp; Mysql server
 
-# Using Ansibel Playbook to install Apache,2 Tomcat instances & Mysql server
+# Using Ansible Playbook to install Apache,2 Tomcat instances & Mysql server
 
 This playbook would simply install Apache2 , Mysql and 2 Apache Tomcat instances. It would get tomcat instances from my S3 bucket and also change .bashrc file for CATALINA_HOME and then deploy simple war file provided by tomcat named as "sample.war" in both tomcat instances.
 
